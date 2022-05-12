@@ -4,12 +4,14 @@ var form, player, playerCount;
 var bg, bgImg
 var mangus, frango;
 var frangoImg, mangusImg;
+var fuelImage, fuels;
 
 function preload() {
   
   frangoImg= loadImage("assets/frango.png");
   mangusImg= loadImage("assets/mangus.png");
   bgImg= loadImage ("assets/neon city.png");
+  fuelImage= loadImage("assets/POWER.png");
 }
 
 function setup() {
@@ -17,7 +19,7 @@ function setup() {
   database = firebase.database();
   game = new Game();
   game.getState();
-  game.start();
+  
 }
 
 function draw() {
@@ -33,8 +35,10 @@ function draw() {
   if (gameState === 2) {
     
   }
+  drawSprites()
 }
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+
 }

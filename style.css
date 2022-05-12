@@ -4,11 +4,6 @@ html, body {
   overflow: hidden;
 }
 
-@font-face {
-  font-family: vollkorn;
-  src: url(./assets/Vollkorn-Bold.ttf);
-}
-
 canvas {
   display: block;
 }
